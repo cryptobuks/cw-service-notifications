@@ -1,0 +1,20 @@
+module.exports = {
+  rabbitmq: { active: true, server: 'localhost:15672', user: 'dev', password: 'dev123' },
+  redis: { active: true, server: 'localhost', port: 16379 },
+  options: {
+    mailto: '',
+    vapidPublicKey: '',
+    vapidPrivateKey: ''
+  },
+  mongodb: {
+    active: true,
+    debug: true,
+    databases: [
+      {
+        name: 'notifications',
+        db: 'notifications',
+        options: {}
+      }
+    ]
+  }
+}
